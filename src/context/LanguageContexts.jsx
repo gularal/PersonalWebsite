@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from "react";
-
 import ceviri from "../data/translations.json";
+
 export const ContextLanguage = createContext();
 
 export const LanguageContexts = ({ children }) => {
@@ -11,8 +11,16 @@ export const LanguageContexts = ({ children }) => {
     setContent(ceviri[language] || {});
   }, [language]);
 
-  const dilDegistir = (yeniDil) => {
-    setLanguage(yeniDil);
+  const dilDegistir = () => {
+    setLanguage(()=>{
+      if(language==="en")
+      {
+        return"tr"
+      }else if(language==="tr")
+        {
+     return "en"
+      }
+    });
   };
 
   return (
