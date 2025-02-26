@@ -24,8 +24,8 @@ const Introduce = () => {
         </p>
         <div className="intro-links">
           <a className="button " href="#">Hire me</a>
-          <a className="button" href="#">Github</a>
-          <a className="button" href="#">Linkedin</a>
+          <a className="button" href="https://github.com/">Github</a>
+          <a className="button" href="https://www.linkedin.com/login/tr?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin">Linkedin</a>
         </div>
         </div>
         <div className="images">
